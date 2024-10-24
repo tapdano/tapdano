@@ -1,0 +1,23 @@
+main{
+    padding: 200px 0px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logoMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.logoMain p{
+    font-size: 140px;
+    line-height: 160.86px
+}
+main p{
+    max-width: 35ch;
+}
+main p span{
+    display: inline-block;
+    font-weight: 600;
+}

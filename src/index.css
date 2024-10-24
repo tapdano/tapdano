@@ -20,10 +20,6 @@ body{
 .branco{
   color: var(--branco);
 }
-.gradient{
-  color: var(--gradient);
-}
-
 .container{
   max-width: 1440px;
   margin: 0 auto;
@@ -47,4 +43,19 @@ body{
 }
 .button:hover{
   background: linear-gradient(94.78deg, #c9c9c9 1.7%, rgba(202, 202, 202, 0.44) 100.26%);
+}
+
+.gradient-text{
+  background: linear-gradient(to bottom, #FFFFFF 10%, #ffffff44 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text{
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 42.97px;
+  letter-spacing: 0.01em;
+  text-align: center;
 }

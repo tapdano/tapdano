@@ -1,4 +1,4 @@
-import logo from '../../../public/logo.svg'
+import logo from '../../logo.svg'
 
 function Header() {
   return (
@@ -6,7 +6,7 @@ function Header() {
       <header>
         <nav className='container'>
             <div className='logoHeader'>
-                <img src={logo} width={43.13} alt="Logo Tapdano" />
+                <img src={logo} width={43.13} alt="Logo Tapdano" draggable="false" />
                 <p className='textLogoTapdano'>tapdano</p>
             </div>
 
@@ -35,6 +35,7 @@ function Header() {
         .logoHeader .textLogoTapdano{
             font-size: 35px;
             line-height: 40.22px;
+            user-select: none;
         }
         nav ul{
             list-style: none;
