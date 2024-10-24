@@ -17,7 +17,24 @@ main{
 main p{
     max-width: 35ch;
 }
-main p span{
+span{
     display: inline-block;
     font-weight: 600;
+}
+.openSource{
+    padding: 120px 20px 240px;
+}
+.openSourceContent{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 70%;
+}
+.openSourceContent p{
+    text-align: justify;
+}
+.openSourceContent a{
+    align-self: self-start;
+    text-decoration: none;
+    padding: 30px 70px;
 }
