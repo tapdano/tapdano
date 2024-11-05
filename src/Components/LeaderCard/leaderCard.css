@@ -1,0 +1,38 @@
+.leadersCard{
+    padding: 40px;
+    background-color: #141414;
+    text-align: start;
+    flex: 1;
+}
+.headerLeadersCard,
+.infoLeaders{
+    display: flex;
+    justify-content: space-between;
+}
+.infoLeaders{
+    flex-direction: column;
+}
+.headerLeadersCard{
+    margin-bottom: 50px;
+    gap: 20px;
+}
+.leadersContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+}
+
+@media (max-width: 650px){
+    .leadersCard {
+        padding: 16px;
+    }
+    .headerLeadersCard img{
+        width: 130px;
+    }
+    .infoLeaders{
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+}

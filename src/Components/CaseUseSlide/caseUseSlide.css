@@ -1,0 +1,200 @@
+.caseUseSlider {
+    position: relative;
+    width: 100%;
+    max-width: 1728px;
+    height: 1130px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+  
+.caseUseSlide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: white;
+    padding: 60px;
+    transition: 1s ease-in-out;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.useSlide-1{
+    background: linear-gradient(0deg, rgba(5,5,5,1) 5%, rgba(5,5,5,0) 40%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 60%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage1.jpg')  left / cover no-repeat;
+}
+.useSlide-2{
+    background: linear-gradient(0deg, rgba(5,5,5,1) 5%, rgba(5,5,5,0) 40%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 60%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage2.jpg') no-repeat;
+}
+.useSlide-3{
+    background: linear-gradient(0deg, rgba(5,5,5,1) 5%, rgba(5,5,5,0) 20%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 80%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage3.jpg') no-repeat;
+}
+.useSlide-4{
+    background: linear-gradient(0deg, rgba(5,5,5,1) 5%, rgba(5,5,5,0) 40%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 60%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage4.jpg') no-repeat;
+}
+.useSlide-5{
+    background: linear-gradient(0deg, rgba(5,5,5,1) 5%, rgba(5,5,5,0) 40%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 60%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage5.jpg') no-repeat;
+}
+.useSlide-6{
+    background: linear-gradient(0deg, rgba(5,5,5,1) 5%, rgba(5,5,5,0) 40%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 60%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage6.jpg') no-repeat;
+}
+
+.caseUseSlide.active {
+    display: flex;
+    opacity: 1;
+}
+.caseUseContent {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+}
+.caseUseText{
+    display: flex;
+    flex-direction: column;
+}
+.caseUseContent h3{
+    margin-bottom: 60px;
+}
+.caseUseContent a{
+    align-self: end;
+    padding: 30px 100px;
+}
+.caseUseNavigation-dots {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+  
+.caseUseNavigation-dots button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+}
+  
+.caseUseNavigation-dots .active {
+    background-color: white;
+    opacity: 1;
+}
+  
+@media (max-width: 920px){
+    .caseUseSlide{
+        flex-direction: row;
+    }
+    .caseUseContent{
+        justify-content: space-between;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .caseUseContent h3{
+        font-size: 80px;
+        line-height: 85px;
+    }
+    .caseUseContent a{
+        align-self: normal;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .caseUseNavigation-dots {
+        bottom: 100px;
+    }
+}
+@media (max-width: 850px){
+    .caseUseContent h3{
+        font-size: 65px;
+        line-height: 70px;
+    }
+    .caseUseContent a{
+        margin-bottom: 120px;
+    }
+    .caseUseSlide{
+        padding: 16px;
+    }
+    .caseUseNavigation-dots {
+        bottom: 100px;
+    }
+    .caseUseNavigation-dots button {
+        width: 14px;
+        height: 14px;
+    }
+    .useSlide-1{
+        background: linear-gradient(0deg, rgba(5,5,5,1) 15%, rgba(5,5,5,0) 45%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 70%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage1.jpg') no-repeat 10% 10%;
+        background-size: 220%;
+    }
+    .useSlide-2{
+        background: linear-gradient(0deg, rgba(5,5,5,1) 15%, rgba(5,5,5,0) 45%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 60%, rgba(5,5,5,1) 90%), url('../../assets/images/caseUseSlide/caseUseSlideImage2.jpg') no-repeat 15% 10%;
+        background-size: 220%;
+    }
+    .useSlide-3{
+        background: linear-gradient(0deg, rgba(5,5,5,1) 15%, rgba(5,5,5,0) 45%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 60%, rgba(5,5,5,1) 90%), url('../../assets/images/caseUseSlide/caseUseSlideImage3.jpg') no-repeat 5% 10%;
+        background-size: 220%;
+    }
+    .useSlide-4{
+        background: linear-gradient(0deg, rgba(5,5,5,1) 5%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 60%, rgba(5,5,5,0) 70%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage4.jpg') no-repeat 20% 10%;
+        background-size: 220%;
+    }
+    .useSlide-5{
+        background: linear-gradient(0deg, rgba(5,5,5,1) 15%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 60%, rgba(5,5,5,0) 70%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage5.jpg') no-repeat 20% 10%;
+        background-size: 220%;
+    }
+    .useSlide-6{
+        background: linear-gradient(0deg, rgba(5,5,5,1) 15%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 60%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage6.jpg') no-repeat 15% 10%;
+        background-size: 220%;
+    }
+}
+  
+@media (max-width: 680px){
+    .caseUseContent h3{
+        font-size: 55px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 650px){
+    .caseUseSlider {
+        height: 900px;
+    }
+    .caseUseContent .button{
+        align-self: normal;
+        text-align: center;
+        padding: 30px 0px;
+    }
+}
+@media (max-width: 525px){
+    .caseUseContent h3{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .useSlide-1{
+        background: linear-gradient(0deg, rgba(5,5,5,1) 20%, rgba(5,5,5,0) 55%, rgba(5,5,5,0) 60%, rgba(5,5,5,0) 80%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage1.jpg') no-repeat 20% 20%;
+        background-size: 270%;
+    }
+    .useSlide-2{
+        background: linear-gradient(0deg, rgba(5,5,5,1) 20%, rgba(5,5,5,0) 55%, rgba(5,5,5,0) 60%, rgba(5,5,5,0) 80%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage2.jpg') no-repeat 25% 20%;
+        background-size: 270%;
+    }
+    .useSlide-3{
+        background: linear-gradient(0deg, rgba(5,5,5,1) 20%, rgba(5,5,5,0) 55%, rgba(5,5,5,0) 60%, rgba(5,5,5,0) 80%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage3.jpg') no-repeat 13% 20%;
+        background-size: 270%;
+    }
+    .useSlide-4{
+        background: linear-gradient(0deg, rgba(5,5,5,1) 5%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 60%, rgba(5,5,5,0) 70%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage4.jpg') no-repeat 20% 20%;
+        background-size: 270%;
+    }
+    .useSlide-5{
+        background: linear-gradient(0deg, rgba(5,5,5,1) 20%, rgba(5,5,5,0) 55%, rgba(5,5,5,0) 60%, rgba(5,5,5,0) 70%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage5.jpg') no-repeat 25% 20%;
+        background-size: 270%;
+    }
+    .useSlide-6{
+        background: linear-gradient(0deg, rgba(5,5,5,1) 20%, rgba(5,5,5,0) 55%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 60%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage6.jpg') no-repeat 10% 20%;
+        background-size: 270%;
+    }
+}

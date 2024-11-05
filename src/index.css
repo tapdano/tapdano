@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Ubuntu:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--background);
+  color: var(--branco);
+}
+
+:root {
+  --branco: #fff;
+  --background: #050505;
+  --gradient: linear-gradient(94.78deg, #FFFFFF 1.7%, rgba(255, 255, 255, 0.44) 100.26%);
+}
+.branco{
+  color: var(--branco);
+}
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-inline: 16px;
+}
+
+.textLogoTapdano{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.button{
+  background: var(--gradient);
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.25px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.button:hover{
+  background: linear-gradient(94.78deg, #c9c9c9 1.7%, rgba(202, 202, 202, 0.44) 100.26%);
+}
+
+.gradient-text{
+  background: linear-gradient(to bottom, #FFFFFF 20%, #ffffff44 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-title{
+  background: linear-gradient(to right, #FFFFFF 40%, #ffffff44 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.title-1{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 100px;
+}
+.title-2{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.text-1{
+  font-family: "DM Sans", sans-serif;
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 42.97px;
+  letter-spacing: 0.01em;
+}
+
+.text-2{
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.25px;
+  letter-spacing: 0.01em;
+}
+
+.complement{
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.25px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+a{
+  display: inline-block;
+}
+@media (max-width: 650px){
+  .title-1{
+    font-size: 55px;
+    line-height: 55px;
+  }
+  .title-2{
+    font-size: 24px;
+    line-height: 31.25px;
+  }
+  
+  .text-1{
+    font-size: 21px;
+    line-height: 27.34px;
+    letter-spacing: 0.01em;
+  }
+  
+  .text-2{
+    font-size: 18px;
+    line-height: 23.44px;
+    letter-spacing: 0.01em;
+  }
+  
+  .complement{
+    font-size: 18px;
+    line-height: 23.44px;
+    letter-spacing: 0.1em; 
+  }
+  
+}

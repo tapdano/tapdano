@@ -1,0 +1,22 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.footer-border{
+    padding-bottom: 50px;
+    width: 100%;
+    border-top: 1px solid #FFFFFF1A;
+}
+
+@media (max-width: 650px){
+    footer, 
+    .footer-border{
+        padding-bottom: 30px;
+    }
+    footer img{
+        width: 60px;
+    }
+}

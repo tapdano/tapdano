@@ -1,0 +1,121 @@
+.card-slider {
+    position: relative;
+    width: 100%;
+    height: 620px;
+    overflow: hidden;
+}
+  
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: none;
+    color: white;
+    padding: 60px;
+    transition: 1s ease-in-out;
+}
+.slide-1{
+    background: linear-gradient(90deg, #141414 30%, rgba(20, 20, 20, 0.7) 60%, rgba(20, 20, 20, 0.3) 99%), url('../../assets/images/caseStudySlide/caseStudySlideImage1.jpg') no-repeat right;
+}
+.slide-2{
+    background: linear-gradient(-90deg, #141414 10%, rgba(20, 20, 20, 0.7) 60%, rgba(20, 20, 20, 0) 95%), url('../../assets/images/caseStudySlide/caseStudySlideImage2.jpg') no-repeat;
+    justify-content: end;
+}
+.slide-3{
+    background: linear-gradient(90deg, #141414 30%, rgba(20, 20, 20, 0.7) 60%, rgba(20, 20, 20, 0.3) 99%), url('../../assets/images/caseStudySlide/caseStudySlideImage3.jpg') no-repeat right;
+}
+
+.slide.active {
+    display: flex;
+    opacity: 1;
+} 
+  
+.content {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.content h3{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 58.59px;
+    letter-spacing: 0.01em;
+    max-width: 20ch;
+}
+  
+.content p {
+    text-align: justify;
+    max-width: 39ch;
+}
+  
+.navigation-dots {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+  
+.navigation-dots button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+}
+  
+.navigation-dots .active {
+    background-color: white;
+    opacity: 1;
+}
+
+@media (max-width: 850px){
+    .caseStudySlide.container {
+        padding-inline: 0px;
+    }
+    .card-slider {
+        width: 100%;
+        height: 840px;
+    }
+    .slide {
+        padding: 20px;
+        padding-bottom: 60px;
+    }
+    .slide-1{
+        background: linear-gradient(360deg, #141414 40%, rgba(20, 20, 20, 0.7) 70%, rgba(20, 20, 20, 0.3) 99%), url('../../assets/images/caseStudySlide/caseStudySlideImage1.jpg') no-repeat right;
+    }
+    .slide-2{
+        background: linear-gradient(360deg, #141414 40%, rgba(20, 20, 20, 0.7) 70%, rgba(20, 20, 20, 0) 95%), url('../../assets/images/caseStudySlide/caseStudySlideImage2.jpg') no-repeat top;
+        justify-content: start;
+    }
+    .slide-3{
+        background: linear-gradient(360deg, #141414 40%, rgba(20, 20, 20, 0.7) 70%, rgba(20, 20, 20, 0.3) 99%), url('../../assets/images/caseStudySlide/caseStudySlideImage3.jpg') no-repeat top;
+    }
+    .content {
+        align-self: end;
+    }
+    .content p {
+        max-width: 100%;
+    }
+    .navigation-dots {
+        bottom: 20px;
+    }
+    .navigation-dots button {
+        width: 14px;
+        height: 14px;
+    }
+}
+@media (max-width: 550px){
+    .content h3{
+        font-size: 24px;
+        line-height: 31.25px;
+        letter-spacing: 0.01em;
+    }
+}

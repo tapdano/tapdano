@@ -1,0 +1,128 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+.logoHeader{
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+.logoHeader .textLogoTapdano{
+    font-size: 35px;
+    line-height: 40.22px;
+    user-select: none;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 80px;
+}
+nav ul a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26.04px;
+    transition: 0.3s
+}
+nav ul a:hover{
+    color: #c9c9c9;
+}
+nav .button{
+    padding: 8px 32px;
+    border: none;
+    outline: none;
+}
+.button.contact-us {
+    display: inline-block;
+}
+.hamburguer{
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid var(--branco);
+    cursor: pointer;
+    width: 30px;
+}
+.hamburguer::before,
+.hamburguer::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: var(--branco);
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+@media (max-width: 850px){
+    .logoHeader p{
+        display: none;
+    }
+    .hamburguer{
+        display: block;
+        z-index: 100;
+    }
+    header nav ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--background);
+        clip-path: circle(100px at 95% -20%);
+        transition: 1s ease-out;
+ 
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+        z-index: 10;
+    }
+    .navList a{
+        font-size: 24px;
+        opacity: 0;
+    }
+    .navList li:nth-child(1) a{
+        transition: 0.5s 0.2s;
+    }
+    .navList li:nth-child(2) a{
+        transition: 0.5s 0.4s;
+    }
+    .navList li:nth-child(3) a{
+        transition: 0.5s 0.6s;
+    }
+    .navList li:nth-child(4) a{
+        transition: 0.5s 0.8s;
+    }
+    .nav.active .navList{
+        clip-path: circle(1500px at 95% -9%);
+        pointer-events: all;
+    }
+    .nav.active .navList a{
+        opacity: 1;
+    }
+    .nav.active .hamburguer{
+        position: fixed;
+        right: 20px;
+        border-top-color: transparent;
+    }
+    .nav.active .hamburguer::before{
+        transform: rotate(135deg);
+    }
+    .nav.active .hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    .button.contact-us {
+        display: none;
+    }
+    .nav.active .navList .button {
+        display: block;
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+}
