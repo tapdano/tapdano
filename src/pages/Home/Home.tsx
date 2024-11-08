@@ -20,6 +20,10 @@ function Home() {
     <>
       <Header/>
 
+      <section className='stripe'>
+        <a href="https://cardano.ideascale.com/c/cardano/idea/134529" target="_blank" className='branco'>VOTE FOR US -  CLICK HE TO SEE OUR FUND 13 PROPOSAL</a>
+      </section>
+
       <main className='container'>
         <div className='logoMain'>
           <img src={logo} alt="Logo Tapdano" width={300} draggable="false"/>

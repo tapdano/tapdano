@@ -1,3 +1,20 @@
+.stripe{
+    background: linear-gradient(86.88deg, rgba(34, 102, 175, 0.6) 2.09%, rgba(66, 65, 127, 0.6) 50%, rgba(191, 129, 120, 0.6) 97.91%);
+    padding-block: 30px;
+    text-align: center;
+}
+.stripe a{
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31.25px;
+    letter-spacing: 0.01em;
+}
+.stripe a:hover{
+    color: #c9c9c9;
+}
+
 main{
     padding: 200px 0px;
     display: flex;
@@ -372,6 +389,14 @@ span{
     }
 }
 @media (max-width: 850px){
+    .stripe{
+        padding-block: 24px;
+    }
+    .stripe a{
+        font-size: 18px;
+        line-height: 23.44px;
+        letter-spacing: 0.01em;
+    }
     .whoFundContent{
        flex-direction: column;
     }
@@ -504,6 +529,13 @@ span{
 }
 
 @media (max-width: 550px){
+    .stripe{
+        padding-block: 18px;
+    }
+    .stripe a{
+        font-size: 12px;
+        line-height: 14px;
+    }
     .openSource{
         background-size: 120%;
         background-position: -200% 0%;
