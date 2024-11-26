@@ -17,11 +17,15 @@ body{
 
 :root {
   --branco: #fff;
+  --azul: #75B7FE;
   --background: #050505;
   --gradient: linear-gradient(94.78deg, #FFFFFF 1.7%, rgba(255, 255, 255, 0.44) 100.26%);
 }
 .branco{
   color: var(--branco);
+}
+.azul{
+  color: var(--azul);
 }
 .container{
   max-width: 1440px;
@@ -74,7 +78,7 @@ body{
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 45px;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 50px;    
 }
 
 .text-1{
@@ -99,12 +103,22 @@ body{
   font-weight: 500;
   line-height: 31.25px;
   letter-spacing: 0.1em;
-  text-align: center;
+  text-align: center;      
 }
 
-a{
+.text-highlight{
+  font-family: "DM Sans", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0.1em;
+  display: inline;
+}
+
+a, span{
   display: inline-block;
 }
+
 @media (max-width: 650px){
   .title-1{
     font-size: 55px;
@@ -132,5 +146,8 @@ a{
     line-height: 23.44px;
     letter-spacing: 0.1em; 
   }
-  
+  .text-highlight{
+    font-size: 22px;
+    line-height: 24px;
+  }
 }
