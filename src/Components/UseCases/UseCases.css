@@ -1,0 +1,15 @@
+.useCases{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    flex: 1;
+}
+.useCases img{
+    margin-bottom: 40px;
+    height: 170px;
+}
+@media (max-width: 850px){
+    .useCases img{
+        height: 140px;
+    }
+}

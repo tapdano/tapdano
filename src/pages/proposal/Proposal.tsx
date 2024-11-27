@@ -1,16 +1,28 @@
 import './proposal.css'
 
 import Header from '../../Components/Header/Header'
+import UseCases from '../../Components/UseCases/UseCases';
 import Footer from '../../Components/Footer/Footer'
 
 import proposalImage from '../../assets/images/proposal-image.jpg';
+import proofConcept from  '../../assets/images/proofConcept.jpg';
+import gallery1 from '../../assets/images/gallery/image-gallery1.jpg';
+import gallery2 from '../../assets/images/gallery/image-gallery2.jpg';
+import gallery3 from '../../assets/images/gallery/image-galerry3.jpg';
+import gallery4 from '../../assets/images/gallery/image-gallery4.jpg';
+import expamdLab from '../../assets/images/petrobrasExpamdLab.jpg';
+import corporateBadges from '../../assets/svg/useCases/corporateBadges.svg'
+import votingSystem from '../../assets/svg/useCases/votingSystem.svg'
+import certificates from '../../assets/svg/useCases/certificates.svg'
 
 function Proposal() {
 
   return (
     <>
         <Header/>
-
+        <section className='container hero-proposal'>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yyBN4hGU-uc?si=ZBXYW1gELiCThimg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        </section>
         <section className="banner-bg">
             <div className="banner-content container">
                 <div className="banner-text">
@@ -104,6 +116,69 @@ function Proposal() {
             </p>
         </section>
         
+        <section className="proofConcept container text-1">
+            <div className="proofConceptHeader">
+                <div className="proofConcept-text">
+                    <h2 className='title-3'>Proof of Concept</h2>
+                    <p>
+                        On the scope of the partnership between Cardano Foundation and Petrobras, TapDano developed a proof of concept, <span className='text-highlight'>Proof of Attendance solution implemented at Petrobras's ExpamdLAB 2024 event</span>. Participants could, by tapping their mobile phones near a kiosk equipped with a smart card using TapDano's firmware, request their proof of participation in the event and receive an exclusive NFT bounded to a specific NFC and a certificate of attendance tailored for the event in their registered emails. <span className='text-highlight azul'>This was Petrobras's first use of Cardano's mainnet</span>, highlighting the platform's ability to meet the demands of large corporations.
+                    </p>
+                </div>
+                <div className='proofConcept-image'>
+                    <img src={proofConcept} alt="Proof Concept"/>
+                </div>
+            </div>
+
+            <div className="proofConcept-gallery">
+                <img src={gallery1} alt="Gallery 1"/>
+                <img src={gallery2} alt="Gallery 2"/>
+                <img src={gallery3} alt="Gallery 3"/>
+                <img src={gallery4} alt="Gallery 4" className='image-gallery4'/>   
+            </div>
+
+            <img src={expamdLab} alt="Petrobras Expamd Lab" />
+
+            <p>
+                Our approach involves expanding the use cases upon the successful implementation of our Proof of Attendance solution at Petrobras's ExpamdLAB 2024 event. This will serve as a foundation for exploring and leading to <span className='text-highlight'>additional use cases</span> in the future, including:
+            </p>
+
+            <div className="useCasesContainer">
+                <UseCases 
+                    img={corporateBadges}
+                    title='Corporate Badges'
+                    text='Integrating NFC smart cards (JavaCard technology) for secure employee authentication and access control, ensuring private keys are securely stored and never leave the device.'
+                />
+                <UseCases 
+                    img={votingSystem}
+                    title='Voting System'
+                    text='Developing a secure and transparent blockchain-based system for participation in corporate decisions, improving governance and stakeholder engagement.'
+                />
+                <UseCases 
+                    img={certificates}
+                    title='Course Certificates'
+                    text='Issuing immutable and verifiable digital certificates on the Cardano blockchain to enhance trust and transparency in employee training and development programs.'
+                />
+
+           
+            </div>
+
+            <p>
+                Our project will engage Petrobras's employees, stakeholders, and event participants, providing them with hands-on experience using <span className='text-highlight'>blockchain technology in a secure and user-friendly manner.</span>
+            </p>
+
+            <p>
+                By collaborating closely with Petrobras, we aim to navigate bureaucratic and compliance challenges effectively, customizing our solutions to meet regulatory requirements and habilitating internal policies.
+            </p>
+
+            <p className='text-highlight azul'>
+                At the end of this project, we expect Petrobras to use Cardano mainnet in compliance with their needs and adopt TapDano technology to solve their problems.
+            </p>
+
+            <p>
+                For TapDano this opportunity also represents a way to refine our product and platform, having Petrobras as a design partner. Furthermore, our development will be 100% open-source.
+            </p>
+        </section>
+
         <Footer/>
     </>
   )
