@@ -67,8 +67,10 @@ function Home() {
             role="BUSINESS DIRECTOR" 
             name="Thiago Nunes"
             photoSrc={thiagoPhoto}
-            summary="Cardano Ambassador | Pioneer Cardano Stakepool Operator at OUROS | Intersect | Director at Cardano Warriors"
-            bio="Tech entrepreneur and a business strategist. Has a strong desire to deep dive into technological challenges, blockchain has been his favorite for over 10 years. An idealist and libertarian with a blockchain mindset. " 
+            bio={`
+            Cardano Ambassador | Pioneer Cardano Stakepool Operator at OUROS | Intersect | Director at Cardano Warriors
+            \n
+            Tech entrepreneur and a business strategist. Has a strong desire to deep dive into technological challenges, blockchain has been his favorite for over 10 years. An idealist and libertarian with a blockchain mindset. `}
           />
           
           <LeaderCard

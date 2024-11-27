@@ -22,6 +22,9 @@
     gap: 20px;
     text-align: justify;
 }
+.leaderBio{
+    white-space: pre-line; 
+}
 
 @media (max-width: 650px){
     .leadersCard {

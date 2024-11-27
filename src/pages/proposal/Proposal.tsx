@@ -2,6 +2,7 @@ import './proposal.css'
 
 import Header from '../../Components/Header/Header'
 import UseCases from '../../Components/UseCases/UseCases';
+import LeaderCard from '../../Components/LeaderCard/LeaderCard';
 import Footer from '../../Components/Footer/Footer'
 
 import proposalImage from '../../assets/images/proposal-image.jpg';
@@ -17,7 +18,8 @@ import certificates from '../../assets/svg/useCases/certificates.svg'
 import petrobrasLogo from '../../assets/images/companysLogo/petrobrasLogo.png';
 import tapdanoLogo from  '../../assets/images/companysLogo/tapdanoLogo.png';
 import cardanoLogo from  '../../assets/images/companysLogo/cardanoLogo.png';
-
+import thiagoPhoto from '../../assets/images/thiagoPhoto.jpg'
+import lucasPhoto from '../../assets/images/lucasPhoto.jpg'
 
 function Proposal() {
 
@@ -226,6 +228,65 @@ function Proposal() {
             </p>
         </section>
 
+        <section className="ourTeam container">
+            <h2 className='title-1'>Our Team</h2>
+            <div className="teamContainer">
+
+                <LeaderCard
+                role="BUSINESS DIRECTOR" 
+                name="Thiago Nunes"
+                photoSrc={thiagoPhoto}
+                bio={`I have several years of experience in developing digital products and managing teams. I runned a marketing agency for more than seven years in Brazil, working with several clients and managing a team with more than 30 contributors, providing services for small businesses, to national and international corporations. I’ve been a Cardano Ambassador for more than five years together with the Cardano Foundation, one of the pioneers in several initiatives in Cardano, including being one of the ITN SPOs running under Ouros ticker, one of the organizers at Cardano Rio/Cardano Summit, and also the Director of Operations at Cardano Warriors. I also contributed to Intersect for over a year, was part of the MCC, and now at ISC.
+                \n\n
+                You can read a short story about myself here: A short story about myself:
+                `}
+                link1='https://docs.google.com/document/d/1-Cb0RYFrMqwQpvMOXvp7GRz66TAl0ai9kRYuI4lEU_o/edit'
+                titleLink1='A short story about myself'
+                link2='https://www.linkedin.com/in/thiago-s-nunes/'
+                />
+
+                <LeaderCard
+                role="TECHNOLOGY DIRECTOR"
+                name="Lucas Boemeke"
+                photoSrc={lucasPhoto}
+                bio="Experienced CTO and Software Developer with over 20 years in digital product development, specializing in blockchain, digital security, and serverless technologies. Founder of a software house providing solutions for financial institutions, and co-founder of TapDano, an innovative blockchain-based authentication platform leveraging NFC smartcard technology on the Cardano blockchain. Known for creating secure, scalable systems that meet the demands of modern digital infrastructure and edge computing. Highly skilled in product innovation, with a proven ability to lead technical projects from concept through execution."
+                link2='https://www.linkedin.com/in/lucas-boemeke/'
+                />
+
+                <LeaderCard
+                role="DESIGN" 
+                name="Ana Paula Petry"
+                photoSrc=''
+                bio={`I'm a Digital Product Designer and Entrepreneur passionate about decentralized technologies, committed to creating solutions that can transform industries globally. With a background that spans consulting for major companies to co-founding Bohr.io—an innovative developer tool that achieved 2nd place on Product Hunt’s Product of the Day and participated in the Cloudflare's Workers Launchpad program as the only Latin America Startup —I bring comprehensive expertise in business strategy, team management, design, branding, social media and fundraising.
+                As a crypto enthusiast since 2020, I have actively contributed to the blockchain ecosystem, including organizing the Cardano Summit Curitiba 2023 alongside Thiago Nunes and submitting proposals within the Cardano Community. As a member of Intersect, I am dedicated to democratizing web3. My skill set encompasses understanding user challenges, resolving complex system issues, and crafting impactful, seamless user experiences that drive engagement and adoption. `}
+                link2='https://www.linkedin.com/in/anapaulaspetry'
+                link1='https://drive.google.com/file/d/1UZMy57tWO3l-88ckzM5B4VNZrrmVoGG0/view'
+                titleLink1='Ana Paula Petry`s Portifolio.pdf'
+                />
+
+                <LeaderCard
+                role="DEVELOPMENT"
+                name="Igor Wendt"
+                photoSrc=''
+                bio={`Software engineer, Bachelor's Degree in Systems Analysis and Development and has a masters degree in Natural Language Processing.
+                \n
+                Igor has been acting in the development industry for about 10 years, and has experience with PHP, Javascript, Python, NodeJs, Docker, Kubernetes, Terraform, Kafka, Mysql, Postgres and Mongo
+                \n
+                Throughout this period, he has acted in national and international projects, such as Embraer, Quem disse Berenice, Mala e Cuia, Collective Liberty, United Healthcare and Twism. He believes we are able to change the world we live in through technology.
+                `}
+
+                link2='https://www.linkedin.com/in/igorwendt/'
+                />
+
+            </div>
+        </section>
+
+        <section className="voteForUs container">
+            <h2 className='text-highlight'><span className='title-3'>To Vote for Us</span> Search the words <span className='title-3 azul'>Petrobras</span> or <span className='title-3 azul'>Fortune 500</span> on the Catalyst Voting App.</h2>
+            <div>
+                <a href="" className='text-highlight branco'>LEARN MORE</a>
+            </div>
+        </section>
         <Footer/>
     </>
   )

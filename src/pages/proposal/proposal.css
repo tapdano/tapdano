@@ -129,6 +129,32 @@
 }
 
 
+.voteForUs{
+    padding-top: 50px;
+    padding-bottom: 120px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+}
+.voteForUs a{
+    text-decoration: none;
+    padding: 30px 200px;
+    background: linear-gradient(95.46deg, #2266AF 0%, #42417F 50.53%, #BF8178 101.07%);
+    border-radius: 22px;
+    transition: .3s;
+}
+.voteForUs a:hover{
+    filter: grayscale(0.2);
+}
+
+.teamContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
 @media (max-width: 1100px){
     .hero-proposal iframe{
         height: 500px;
