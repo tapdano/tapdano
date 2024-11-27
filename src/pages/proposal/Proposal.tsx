@@ -1,10 +1,12 @@
 import './proposal.css'
 
-import Header from '../../Components/Header/Header'
+import { Link } from 'react-router-dom';
 import UseCases from '../../Components/UseCases/UseCases';
 import LeaderCard from '../../Components/LeaderCard/LeaderCard';
 import Footer from '../../Components/Footer/Footer'
 
+import logo from '../../assets/svg/logo.svg'
+import fundsIcon from '../../assets/images/funds.png';
 import proposalImage from '../../assets/images/proposal-image.jpg';
 import proofConcept from  '../../assets/images/proofConcept.jpg';
 import gallery1 from '../../assets/images/gallery/image-gallery1.jpg';
@@ -20,15 +22,26 @@ import tapdanoLogo from  '../../assets/images/companysLogo/tapdanoLogo.png';
 import cardanoLogo from  '../../assets/images/companysLogo/cardanoLogo.png';
 import thiagoPhoto from '../../assets/images/thiagoPhoto.jpg'
 import lucasPhoto from '../../assets/images/lucasPhoto.jpg'
+import budgetAndCosts from '../../assets/images/budgetAndCosts.jpg'
 
 function Proposal() {
 
   return (
     <>
-        <Header/>
+        <header>
+            <nav className='nav container'>
+                <div className='logoHeader'>
+                    <img src={logo} width={43.13} alt="Logo Tapdano" draggable="false" />
+                    <p className='textLogoTapdano'>tapdano</p>
+                </div>
+                <Link to="/" className='button'>Home</Link>
+            </nav>
+        </header>
+
         <section className='container hero-proposal'>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/yyBN4hGU-uc?si=ZBXYW1gELiCThimg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </section>
+
         <section className="banner-bg">
             <div className="banner-content container">
                 <div className="banner-text">
@@ -67,8 +80,11 @@ function Proposal() {
                     <p>Delivery by: <b>Entity (not incorporated)</b></p>
                 </div>
                 <div className='text-1'>
-                    <p>Requested funds: <span className='text-highlight'>2 000 000</span></p>
-                    <p>DeDuration: <span className='text-highlight'>12 months</span></p>
+                    <div className="requestfund">
+                        <p>Requested funds: <span className='text-highlight'>2 000 000</span></p>
+                        <img src={fundsIcon} alt="Funds icon" />
+                    </div>
+                    <p>Duration: <span className='text-highlight'>12 months</span></p>
                 </div>
                 <p className='text-1'>No dependencies  on other organizations</p>
                 <div className='text-1'>
@@ -279,6 +295,34 @@ function Proposal() {
                 />
 
             </div>
+        </section>
+
+        <section className="proven">
+            <div className="provenBanner">
+                <div className="provenBannerContent container">
+                    <div className="provenBanner-text">
+                        <h2 className='title-1 azul'>Proven capability to deliver with high levels of trust and accountability</h2>              
+                    </div>
+                </div>
+            </div>
+            <div className="provenContent container text-1">
+                <p>
+                    <span className='text-highlight'>TapDano (Fund 10)</span>, led by experienced founders Thiago and Lucas, is well-equipped to deliver this project with high levels of trust and accountability. We have a strong background in blockchain technology, smart contract development, and already developed a NFC firmware, along with a <span className='text-highlight'>proven track record of executing the funded proposal before and establishing a collaboration for a successful Proof of Attendance solution.</span>
+                </p>
+
+                <p>
+                    TapDano is a blockchain-based authentication solution that uses NFC smart cards (JavaCard) to ensure the security and authenticity of digital and physical assets. TapDano combines strong authentication and immutable records for applications such as digital wallets, product authentication, and corporate audits.
+                </p>
+
+                <p>
+                    <span className='text-highlight'>As founders, Thiago and Lucas, have developed smart contracts, SDKs for web and mobile, and open-source firmware for NFC cards.</span> Validating our capability in researching, coordinating, and developing complex projects.
+                </p>
+            </div>
+        </section>
+
+        <section className="budgetAndCost container">
+            <h2 className='title-1'>Budget & Costs</h2>
+            <img src={budgetAndCosts} alt="Budget & Costs" />
         </section>
 
         <section className="voteForUs container">
