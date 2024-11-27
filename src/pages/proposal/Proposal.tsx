@@ -14,6 +14,10 @@ import expamdLab from '../../assets/images/petrobrasExpamdLab.jpg';
 import corporateBadges from '../../assets/svg/useCases/corporateBadges.svg'
 import votingSystem from '../../assets/svg/useCases/votingSystem.svg'
 import certificates from '../../assets/svg/useCases/certificates.svg'
+import petrobrasLogo from '../../assets/images/companysLogo/petrobrasLogo.png';
+import tapdanoLogo from  '../../assets/images/companysLogo/tapdanoLogo.png';
+import cardanoLogo from  '../../assets/images/companysLogo/cardanoLogo.png';
+
 
 function Proposal() {
 
@@ -176,6 +180,49 @@ function Proposal() {
 
             <p>
                 For TapDano this opportunity also represents a way to refine our product and platform, having Petrobras as a design partner. Furthermore, our development will be 100% open-source.
+            </p>
+        </section>
+
+        <section className="positiveImpact container text-1">
+            <div>
+                <h2 className='title-1'>Positive impact</h2>
+                <p className='text-highlight'>
+                    Our project positively impacts the wider Cardano community by demonstrating the blockchain's viability and effectiveness within a large corporate environment.
+                </p>
+            </div>
+
+            <p>
+                This partnership will showcase the scalability, security, and compliance of Cardano's blockchain solutions, enhancing its appeal and credibility among large enterprises. By developing one of the applications such as secure corporate badges, immutable certificates, or transparent voting systems, we’ll diversify Cardano’s use cases, fostering ecosystem growth and opening new opportunities.
+            </p>
+
+            <p>
+                We'll have TapDano, a <span className='text-highlight'> 100% oen-source, community product refined during the process</span>, enhancing our ability to deliver a better experience for our ecosystem.
+            </p>
+
+            <p className='text-highlight azul'>
+                Cardano will have a Fortune 500 success case with the biggest company in South America.
+            </p>
+
+            <div className="companys">
+                <img src={petrobrasLogo} alt="Pretrobras Logo" className='petrobrasLogo'/>
+                <img src={tapdanoLogo} alt="TapDano Logo" className='tapdanoLogo'/>
+                <img src={cardanoLogo} alt="Cardano Foundation Logo" className='cardanoLogo'/>
+            </div>
+
+            <p>
+                We help to create the blockchain culture inside the company, allowing them to expand and gain confidence during the process. <span className='text-highlight'>This will open more doors into the future of possibilities.</span>
+            </p>
+
+            <p>
+                To measure the impact of our project, <span className='text-highlight'>we’ll use a combination of quantitative and qualitative metrics. On the quantitative side, we’ll track adoption rates, such as the number of Petrobras employees utilizing the system and transaction volumes on the Cardano blockchain.</span>
+            </p>
+
+            <p>
+                For partnership expansion, <span className='text-highlight'>we’ll record new enterprise partners gained due to the project’s success. On the qualitative side, we’ll gather feedback from stakeholders, as well as evaluate the Cardano community’s interest and engagement with the project.</span>
+            </p>
+
+            <p>
+                To share our results and opportunities, <span className='text-highlight'>we’ll publish reports and case studies, making them available to the Cardano community and the public</span>. We also plan to present our findings at Cardano community events and collaborate with Catalyst and Intersect committees to align our project with the ecosystem’s goals. Additionally, <span className='text-highlight'>we’ll create educational materials, such as tutorials and guides, to facilitate the adoption of TapDano solutions by other companies.</span>
             </p>
         </section>
 

@@ -30,7 +30,7 @@
     gap: 60px;
 }
 
-.problem h2, .solution h2, .details h2, .proposal h2, .proofConcept-text h2{
+.problem h2, .solution h2, .details h2, .proposal h2, .proofConcept-text h2, .positiveImpact h2{
     margin-bottom: 10px;
 }
 .problem-solution, .details{
@@ -84,15 +84,16 @@
 .proofConcept-text, .proofConcept-image{
     flex: 1;
 }
-.proposal-image img{
+.proposal-image img, .proofConcept-image img{
     width: 100%;
     height: 90%;
     object-fit: cover;
 }
-.proofConcept{
+.proofConcept, .positiveImpact{
     display: flex;
     flex-direction: column;
     gap: 60px;
+    padding-block: 50px;
 }
 .proofConceptHeader{
     display: flex;
@@ -100,11 +101,9 @@
 }
 
 .proofConcept-image img{
-    width: 100%;
     height: 100%;
-    object-fit: cover;
 }
-.proofConcept-text p{
+.proofConcept-text p, .positiveImpact{
     text-align: justify;
 }
 .proofConcept-gallery{
@@ -123,6 +122,12 @@
     display: flex;
     gap: 40px;
 }
+.companys{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 @media (max-width: 1100px){
     .hero-proposal iframe{
@@ -143,10 +148,10 @@
     .proposal-image img{
         max-height: 400px;
     }
-    .proofConcept{
+    .proofConcept, .positiveImpact,  .companys{
         gap: 40px;
     }
-    .proofConceptHeader, .useCasesContainer{
+    .proofConceptHeader, .useCasesContainer, .companys{
         flex-direction: column;
     }
     .proofConcept-image img{
@@ -154,9 +159,9 @@
         object-fit: cover center;
     }
     .proofConcept-gallery{
-        grid-template-columns: 1fr 1fr;
         gap: 0 20px;
     }
+ 
 }
 
 @media (max-width: 850px){
@@ -165,5 +170,14 @@
     }
     .hero-proposal iframe{
         height: 300px;
+    }
+    .petrobrasLogo{
+        width: 250px;
+    }
+    .tapdanoLogo{
+        width: 90px;
+    }
+    .cardanoLogo{
+        width: 260px;
     }
 }
