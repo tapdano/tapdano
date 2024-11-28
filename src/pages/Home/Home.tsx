@@ -24,12 +24,8 @@ function Home() {
         <a href="https://cardano.ideascale.com/c/cardano/idea/134529" target="_blank" className='branco'>VOTE FOR US -  CLICK HE TO SEE OUR FUND 13 PROPOSAL</a>
       </section>
 
-      <main className='container'>
-        <div className='logoMain'>
-          <img src={logo} alt="Logo Tapdano" width={300} draggable="false"/>
-          <p className='textLogoTapdano'>tapdano</p>
-        </div>
-        <p className='text-1 gradient-text'>Simplifying the integration between NFC and NFT technologies in the <span >Cardano Blockchain</span></p>
+      <main className='container hero-home'>
+        <iframe width="560" height="315" src="https://youtu.be/GacSn2CCE80" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
       </main>
 
       <section className='openSource container'>

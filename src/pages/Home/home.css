@@ -14,31 +14,12 @@
 .stripe a:hover{
     color: #c9c9c9;
 }
-
-main{
-    padding: 200px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.hero-home{
+    padding-bottom: 50px;
 }
-.logoMain{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 32px;
-    user-select: none;
-}
-.logoMain .textLogoTapdano{
-    font-size: 140px;
-    line-height: 160.86px
-}
-main p{
-    max-width: 35ch;
-    text-align: center;
-}
-span{
-    display: inline-block;
-    font-weight: 600;
+.hero-home iframe{
+    width: 100%;
+    height: 800px;
 }
 .openSource{
     padding: 100px 16px 260px;
@@ -348,7 +329,13 @@ span{
     }
 
 }
+@media(max-width: 1150px){
+    .hero-home iframe{
+        height: 500px;
+    }
+}
 @media(max-width: 1010px){
+  
     .benefitsContent {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -396,6 +383,12 @@ span{
         font-size: 18px;
         line-height: 23.44px;
         letter-spacing: 0.01em;
+    }
+    .hero-home{
+        padding-block: 25px;
+    }
+    .hero-home iframe{
+        height: 300px;
     }
     .whoFundContent{
        flex-direction: column;
