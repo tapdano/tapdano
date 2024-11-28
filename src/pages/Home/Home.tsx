@@ -7,7 +7,6 @@ import LeaderCard from '../../Components/LeaderCard/LeaderCard'
 import SphereRenderer from '../../Components/Sphere/Sphere'
 import Footer from '../../Components/Footer/Footer'
 
-import logo from '../../assets/svg/logo.svg'
 import thiagoPhoto from '../../assets/images/thiagoPhoto.jpg'
 import lucasPhoto from '../../assets/images/lucasPhoto.jpg'
 import projectCatalystLogo from '../../assets/svg/projectCatalystLogo.svg'
