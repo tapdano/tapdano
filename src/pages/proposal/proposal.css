@@ -5,6 +5,7 @@
     width: 100%;
     height: 800px;
 }
+
 .banner-bg{
     background: linear-gradient(0deg, rgba(5,5,5,1) 5%, rgba(5,5,5,0) 40%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 60%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage2.jpg') center no-repeat;
 }
@@ -16,36 +17,36 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 550px;
     place-self: end;
 }
 .banner-content h1{
     max-width: 11ch;
     margin-bottom: 50px;
 }
-.project-overview{
+
+.sectionContainer{
     padding-block: 50px;
     display: flex;
     gap: 60px;
 }
-
-.problem h2, .solution h2, .details h2, .proposal h2, .proofConcept-text h2, .positiveImpact h2{
+.sectionContainer h2{
     margin-bottom: 10px;
 }
+.sectionContainer p, .positiveImpactHeader{
+    text-align: justify;
+}
+
 .problem-solution, .details{
    flex: 1;
    display: flex;
    flex-direction: column;
 }
-.problem-solution{
-    text-align: justify;
-    gap: 100px;
+.problem-solution, .details, .solution, .proofConceptHeader{
+    gap: 60px;
 }
 .solution{
     display: flex;
     flex-direction: column;
-    gap: 60px;
 }
 .solution-links p{
     font-weight: 700;
@@ -58,30 +59,20 @@
 .solution a:hover{
     color: #c9c9c9;
 }
-.details{
-    gap: 60px;
-}
-.requestfund{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+
 .details h3{
     margin-bottom: 5px;
 }
 .details p{
     margin-bottom: 5px;
 }
-
-.proposal{
-    padding-block: 50px;
-}
-.proposal p{
-    margin-bottom: 60px;
-    text-align: justify;
+.requestfund{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.proposal-image-content{
+.proposal-image-content, .useCasesContainer{
     display: flex;
     gap: 40px;
 }
@@ -94,23 +85,18 @@
     height: 90%;
     object-fit: cover;
 }
-.proofConcept, .positiveImpact, .ourTeam, .budgetAndCost, .proven{
-    display: flex;
+.proposal, .proofConcept, .positiveImpact, .ourTeam, .budgetAndCost, .proven{
     flex-direction: column;
-    gap: 60px;
-    padding-block: 50px;
 }
+
 .proofConceptHeader{
     display: flex;
-    gap: 60px;
 }
 
 .proofConcept-image img{
     height: 100%;
 }
-.proofConcept-text p, .positiveImpact{
-    text-align: justify;
-}
+
 .proofConcept-gallery{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -123,19 +109,13 @@
 .image-gallery4{
     place-self: end center;
 }
-.useCasesContainer{
-    display: flex;
-    gap: 40px;
-}
 .companys{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-
 .voteForUs{
-    padding-top: 50px;
     padding-bottom: 120px;
     text-align: justify;
     display: flex;
@@ -156,15 +136,11 @@
 
 .ourTeam h2{
     text-align: center;
-    margin-bottom: 60px;
 }
 .teamContainer{
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-}
-.budgetAndCost h2{
-    margin-bottom: 60px;
 }
 .budgetAndCost img{
     width: 100%;
@@ -173,19 +149,12 @@
 .provenBanner{
     background: linear-gradient(0deg, rgba(5,5,5,1) 5%, rgba(5,5,5,0) 40%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 60%, rgba(5,5,5,1) 95%), url('../../assets/images/caseUseSlide/caseUseSlideImage4.jpg') center no-repeat;
 }
-.provenBannerContent{
+.provenBanner-content{
     padding-block: 120px;
 }
-.provenBanner-text{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 550px;
-    place-self: end;
-}
-.provenBanner-text h2{
+.provenBanner h2{
     text-align: end;
+    max-width: 15ch;
 }
 .provenContent{
     display: flex;
@@ -197,14 +166,19 @@
     .hero-proposal iframe{
         height: 500px;
     }
-    .project-overview{
+
+    .sectionContainer{
         flex-direction: column;
-        gap: 60px
+        gap: 40px
+    }
+    .sectionContainer h2{
+        text-align: center;
     }
     .problem-solution, .details, .solution{
-        text-align: center;
-        gap: 40px;
+        gap: 20px;
     }
+  
+
     .proposal-image-content{
         flex-direction: column;
         gap: 20px;
@@ -212,8 +186,11 @@
     .proposal-image img{
         max-height: 400px;
     }
-    .proofConcept, .positiveImpact,  .companys{
+    .proofConcept, .positiveImpact,  .provenContent{
         gap: 40px;
+    }
+    .companys{
+        gap: 20px;
     }
     .proofConceptHeader, .useCasesContainer, .companys{
         flex-direction: column;
@@ -225,16 +202,30 @@
     .proofConcept-gallery{
         gap: 0 20px;
     }
- 
+
 }
 
 @media (max-width: 850px){
+    
     .hero-proposal{
         padding-block: 25px;
     }
     .hero-proposal iframe{
         height: 300px;
     }
+
+    .banner-bg{
+        background: linear-gradient(0deg, rgba(5,5,5,1) 15%, rgba(5,5,5,0) 45%, rgba(5,5,5,0) 50%, rgba(5,5,5,0) 55%, rgba(5,5,5,1) 90%), url('../../assets/images/caseUseSlide/caseUseSlideImage2.jpg') no-repeat 13% 30%;
+        background-size: 220%;
+    }
+    .banner-content{
+        padding-top: 200px;
+        padding-bottom: 300px;
+    }
+    .banner-text{
+        place-self: center;
+    }
+
     .petrobrasLogo{
         width: 250px;
     }
@@ -244,9 +235,22 @@
     .cardanoLogo{
         width: 260px;
     }
+    .voteForUs h2{
+        text-align: start;
+    }
     .voteForUs a{
         align-self: normal;
         text-align: center;
         padding: 30px 80px;
     }
+}
+@media (max-width: 650px){
+    .banner-content{
+        padding-top: 150px;
+        padding-bottom: 250px;
+    }
+
+    .requestfund img{
+        width: 40px;
+    }    
 }

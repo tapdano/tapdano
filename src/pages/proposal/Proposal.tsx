@@ -53,13 +53,13 @@ function Proposal() {
             </div>
         </section>
 
-        <section className="project-overview container">
+        <section className="sectionContainer container">
             <div className="problem-solution">
                 <div className="problem text-1">
                     <h2 className='title-1'>Problem</h2>
                     <p><span className='text-highlight'>Enterprises like Petrobras struggle to adopt blockchain</span> due to bureaucracy, compliance, security challenges and education, hindering Cardano's integration into large corporate environments.</p>
                 </div>
-                <div className="solution">
+                <div className="sectionContainer solution">
                     <div className="solution-texts text-1">
                         <h2 className='title-1'>Solution</h2>
                         <p>Work with Petrobras to <span className='text-highlight'>create</span> compliant <span className='text-highlight'>Cardano blockchain solutions</span>, overcoming bureaucracy, security hurdles, enabling corporate adoption facilitating user experience through custom applications.</p>
@@ -96,11 +96,13 @@ function Proposal() {
             </div>
         </section>
 
-        <section className="proposal container text-1">
-            <h2 className='title-1'>Proposal</h2>
-            <p>
-                <span className='text-highlight'>Petrobras</span>, one of the largest energy companies in the world with <span className='text-highlight'>annual revenues exceeding $100 billion</span> , is a strategic player in the global energy market and holds a dominant position in Brazil and Latin America. Its engagement with blockchain technology marks a pivotal step in the corporate adoption of this innovation, especially in Latin America.
-            </p>
+        <section className="sectionContainer proposal container text-1">
+            <div>
+                <h2 className='title-1'>Proposal</h2>
+                <p>
+                    <span className='text-highlight'>Petrobras</span>, one of the largest energy companies in the world with <span className='text-highlight'>annual revenues exceeding $100 billion</span> , is a strategic player in the global energy market and holds a dominant position in Brazil and Latin America. Its engagement with blockchain technology marks a pivotal step in the corporate adoption of this innovation, especially in Latin America.
+                </p>
+            </div>
 
             <p>
                 The first contact between Petrobras and the Cardano ecosystem began in 2022 during the Cardano Rio event. In 2023 Thiago Nunes introduced Petrobras to Rafael Fraga from the Cardano Foundation. <span className='text-highlight'>The joint efforts resulted in the launch of the Petrobras UP Cardano Academy</span>, a large-scale blockchain educational initiative aimed to be part of the oil and gas state owned company as <span className='text-highlight'>its official internal course for all 40,000 Petrobras employees.</span>
@@ -138,7 +140,7 @@ function Proposal() {
             </p>
         </section>
         
-        <section className="proofConcept container text-1">
+        <section className="sectionContainer proofConcept container text-1">
             <div className="proofConceptHeader">
                 <div className="proofConcept-text">
                     <h2 className='title-3'>Proof of Concept</h2>
@@ -201,8 +203,8 @@ function Proposal() {
             </p>
         </section>
 
-        <section className="positiveImpact container text-1">
-            <div>
+        <section className="sectionContainer positiveImpact container text-1">
+            <div className='positiveImpactHeader'>
                 <h2 className='title-1'>Positive impact</h2>
                 <p className='text-highlight'>
                     Our project positively impacts the wider Cardano community by demonstrating the blockchain's viability and effectiveness within a large corporate environment.
@@ -244,7 +246,7 @@ function Proposal() {
             </p>
         </section>
 
-        <section className="ourTeam container">
+        <section className="sectionContainer ourTeam container">
             <h2 className='title-1'>Our Team</h2>
             <div className="teamContainer">
 
@@ -297,10 +299,10 @@ function Proposal() {
             </div>
         </section>
 
-        <section className="proven">
+        <section className="sectionContainer proven">
             <div className="provenBanner">
-                <div className="provenBannerContent container">
-                    <div className="provenBanner-text">
+                <div className="provenBanner-content container">
+                    <div className="banner-text">
                         <h2 className='title-1 azul'>Proven capability to deliver with high levels of trust and accountability</h2>              
                     </div>
                 </div>
@@ -320,16 +322,14 @@ function Proposal() {
             </div>
         </section>
 
-        <section className="budgetAndCost container">
+        <section className="sectionContainer budgetAndCost container">
             <h2 className='title-1'>Budget & Costs</h2>
             <img src={budgetAndCosts} alt="Budget & Costs" />
         </section>
 
-        <section className="voteForUs container">
+        <section className="sectionContainer voteForUs container">
             <h2 className='text-highlight'><span className='title-3'>To Vote for Us</span> Search the words <span className='title-3 azul'>Petrobras</span> or <span className='title-3 azul'>Fortune 500</span> on the Catalyst Voting App.</h2>
-            <div>
-                <a href="" className='text-highlight branco'>LEARN MORE</a>
-            </div>
+            <a href="" className='text-highlight branco'>LEARN MORE</a>
         </section>
         <Footer/>
     </>

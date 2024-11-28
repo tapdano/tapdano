@@ -13,3 +13,8 @@
         height: 140px;
     }
 }
+@media (max-width: 650px){
+    .useCases img{
+        height: 100px;
+    }
+}
