@@ -3,6 +3,7 @@ import './proposal.css'
 import { Link } from 'react-router-dom';
 import UseCases from '../../Components/UseCases/UseCases';
 import LeaderCard from '../../Components/LeaderCard/LeaderCard';
+import MilestonesSlide from '../../Components/MilestonesSlide/MilestonesSlide';
 import Footer from '../../Components/Footer/Footer'
 
 import logo from '../../assets/svg/logo.svg'
@@ -321,6 +322,12 @@ function Proposal() {
                 </p>
             </div>
         </section>
+
+        <section className='sectionContainer '>
+            <div className="container milestones">
+                <MilestonesSlide/>
+            </div>
+      </section>
 
         <section className="sectionContainer budgetAndCost container">
             <h2 className='title-1'>Budget & Costs</h2>
