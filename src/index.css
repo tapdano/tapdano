@@ -121,6 +121,9 @@ body{
   display: inline;
 }
 
+a{
+  word-wrap: break-word;
+}
 a, span{
   display: inline-block;
 }

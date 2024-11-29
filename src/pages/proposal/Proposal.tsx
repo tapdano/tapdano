@@ -23,6 +23,8 @@ import tapdanoLogo from  '../../assets/images/companysLogo/tapdanoLogo.png';
 import cardanoLogo from  '../../assets/images/companysLogo/cardanoLogo.png';
 import thiagoPhoto from '../../assets/images/thiagoPhoto.jpg'
 import lucasPhoto from '../../assets/images/lucasPhoto.jpg'
+import anaPhoto from '../../assets/images/anaPhoto.jpg'
+import igorPhoto from '../../assets/images/igorPhoto.jpg'
 import budgetAndCosts from '../../assets/images/budgetAndCosts.jpg'
 
 function Proposal() {
@@ -275,7 +277,7 @@ function Proposal() {
                 <LeaderCard
                 role="DESIGN" 
                 name="Ana Paula Petry"
-                photoSrc=''
+                photoSrc={anaPhoto}
                 bio={`I'm a Digital Product Designer and Entrepreneur passionate about decentralized technologies, committed to creating solutions that can transform industries globally. With a background that spans consulting for major companies to co-founding Bohr.io—an innovative developer tool that achieved 2nd place on Product Hunt’s Product of the Day and participated in the Cloudflare's Workers Launchpad program as the only Latin America Startup —I bring comprehensive expertise in business strategy, team management, design, branding, social media and fundraising.
                 As a crypto enthusiast since 2020, I have actively contributed to the blockchain ecosystem, including organizing the Cardano Summit Curitiba 2023 alongside Thiago Nunes and submitting proposals within the Cardano Community. As a member of Intersect, I am dedicated to democratizing web3. My skill set encompasses understanding user challenges, resolving complex system issues, and crafting impactful, seamless user experiences that drive engagement and adoption. `}
                 link2='https://www.linkedin.com/in/anapaulaspetry'
@@ -286,7 +288,7 @@ function Proposal() {
                 <LeaderCard
                 role="DEVELOPMENT"
                 name="Igor Wendt"
-                photoSrc=''
+                photoSrc={igorPhoto}
                 bio={`Software engineer, Bachelor's Degree in Systems Analysis and Development and has a masters degree in Natural Language Processing.
                 \n
                 Igor has been acting in the development industry for about 10 years, and has experience with PHP, Javascript, Python, NodeJs, Docker, Kubernetes, Terraform, Kafka, Mysql, Postgres and Mongo

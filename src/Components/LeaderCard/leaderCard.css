@@ -37,5 +37,14 @@
         justify-content: flex-start;
         gap: 30px;
     }
+    .infoLeaders p{
+        text-align: start !important;
+    }
 
+}
+@media (max-width: 450px){
+    .leadersCard{
+        max-width: 420px;
+        width: 100%;
+    }
 }
