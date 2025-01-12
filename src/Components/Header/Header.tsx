@@ -25,6 +25,7 @@ function Header() {
                     ref={hamburguerRef}
             ></button>
             <ul className='navList'>
+                <li><a href="https://tapdano.github.io/docs/" target="_blank" className='branco'>Docs</a></li>
                 <li><a href="https://github.com/tapdano" target="_blank" className='branco'>Learn</a></li>
                 <li><a href="https://github.com/tapdano" target="_blank" className='branco'>Explore</a></li>
                 <li><a href="https://github.com/tapdano" target="_blank" className='branco'>Build</a></li>
