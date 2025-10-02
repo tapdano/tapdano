@@ -19,9 +19,9 @@ function Home() {
     <>
       <Header/>
 
-      <section className='stripe'>
+      <!--<section className='stripe'>
         <a href="https://cardano.ideascale.com/c/cardano/idea/134529" target="_blank" className='branco'>VOTE FOR US -  CLICK HE TO SEE OUR FUND 13 PROPOSAL</a>
-      </section>
+      </section>-->
 
       <main className='container hero-home'>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/GacSn2CCE80?si=9SwtdwrPi43IByP3&amp;controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
