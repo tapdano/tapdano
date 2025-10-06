@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TapDano App</title>
+    <style>
+        body{font-family:Arial;text-align:center;padding:50px;background:#667eea;color:white;margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center}
+        .spinner{border:4px solid rgba(255,255,255,0.3);border-top:4px solid white;border-radius:50%;width:40px;height:40px;animation:spin 1s linear infinite;margin:20px auto}
+        @keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+        .links{display:none;margin-top:20px}
+        a{color:white;text-decoration:none;margin:10px;padding:10px 20px;background:rgba(255,255,255,0.2);border-radius:5px;display:inline-block}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>TapDano</h1>
+        <p>Redirecting to app store...</p>
+        <div class="spinner"></div>
+        <div class="links" id="links">
+            <a href="https://play.google.com/store/apps/details?id=com.tapdano.app">Google Play</a>
+            <a href="https://apps.apple.com/us/app/tapdano/id6752780931">App Store</a>
+        </div>
+    </div>
+    <script>
+        const ua=navigator.userAgent;
+        if(/android/i.test(ua))location.href="https://play.google.com/store/apps/details?id=com.tapdano.app";
+        else if(/iPad|iPhone|iPod/.test(ua)&&!window.MSStream)location.href="https://apps.apple.com/us/app/tapdano/id6752780931";
+        else setTimeout(()=>{document.querySelector('.spinner').style.display='none';document.getElementById('links').style.display='block'},2000);
+    </script>
+</body>
+</html>
