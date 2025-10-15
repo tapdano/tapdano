@@ -1,0 +1,420 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TapDano Terms of Use</title>
+  <style>
+    :root {
+      --text: #e6e6e6;
+      --muted: #a3a3a3;
+      --bg: #0d1117;
+      --hr: #2d333b;
+      --accent: #8ab4f8;
+      --maxw: 900px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+                   Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji",
+                   "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    main {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 3.5rem;
+    }
+
+    h1, h2 {
+      line-height: 1.25;
+      margin: 2rem 0 0.75rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    h1 { font-size: clamp(1.5rem, 2.4vw + 1rem, 2rem); }
+    h2 { font-size: clamp(1.125rem, 1.2vw + 0.9rem, 1.35rem); margin-top: 1.5rem; }
+
+    p { margin: 0.75rem 0; }
+    ul, ol {
+      margin: 0.5rem 0 0.75rem 1.25rem;
+      padding-left: 1rem;
+    }
+    li { margin: 0.25rem 0; }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--hr);
+      margin: 1.5rem 0;
+    }
+
+    strong { font-weight: 700; }
+    em { font-style: italic; }
+
+    .narrow { max-width: 80ch; }
+
+    a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+    a:hover { text-decoration-thickness: 2px; }
+
+    .highlight-box {
+      background: rgba(138, 180, 248, 0.1);
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.25rem;
+      margin: 1.25rem 0;
+      border-radius: 4px;
+    }
+
+    .highlight-box p:first-child {
+      margin-top: 0;
+    }
+
+    .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    @media print {
+      body { color: #000; }
+      main { padding: 0; }
+      a { color: #000; text-decoration: none; }
+      hr { border-top-color: #ccc; }
+    }
+  </style>
+<script async>const _BOHR_DEV_MODE = false;const _BOHR_ENV_URL = "https://bohr.io";const _BOHR_REPO_OWNER = "tapdano";const _BOHR_REPO_NAME = "tapdano";const _BOHR_REF_NAME = "main";const _BOHR_SITE_URL = "tapdano.com";</script><script async src="https://bohr.io/_old/index.js?0.01507090289651769"></script></head>
+<body>
+<main aria-labelledby="title">
+  <h1 id="title">TapDano Terms of Use</h1>
+
+  <p><strong>Effective Date:</strong> October 15, 2025</p>
+
+  <p>These Terms of Use ("<strong>Terms</strong>") govern your access to and use of the TapDano mobile application (the "<strong>App</strong>"), including the Seed Vault feature and related services (collectively, the "<strong>Services</strong>") provided by <strong>TAPDANO, LLC</strong> ("<strong>we</strong>," "<strong>us</strong>," "<strong>our</strong>").</p>
+
+  <p>By using the Services, you agree to be bound by these Terms. If you do not agree to these Terms, do not use the Services.</p>
+
+  <hr />
+
+  <h1>About TapDano &amp; Seed Vault</h1>
+
+  <p>TapDano provides a secure solution for managing cryptocurrency wallet seed phrases using NFC (Near Field Communication) technology. The <strong>Seed Vault</strong> feature allows you to store encrypted wallet seed phrases on physical NFC tags for convenient and secure access.</p>
+
+  <div class="highlight-box">
+    <p><strong>Key Security Principle:</strong> Your seed phrases are <strong>never transmitted to or stored on our servers</strong>. All encryption and decryption operations occur locally on your device.</p>
+  </div>
+
+  <hr />
+
+  <h1>How Your Information Is Handled</h1>
+
+  <h2>Data Stored Locally on Your Device</h2>
+  <ul>
+    <li><strong>NFC Tag Physical ID:</strong> Used to verify you're scanning the correct tag</li>
+    <li><strong>Tag Index:</strong> Identifies which tag you're currently using</li>
+    <li><strong>Wallet Metadata:</strong> Wallet names, types, and encrypted seed phrases</li>
+    <li><strong>App Settings:</strong> Your preferences and configuration</li>
+  </ul>
+
+  <h2>Data Stored on NFC Tags</h2>
+  <ul>
+    <li><strong>Tag ID:</strong> A unique identifier linking the tag to your account</li>
+    <li><strong>Encrypted Wallet Data:</strong> Your wallet seed phrases encrypted with AES-256 encryption</li>
+    <li><strong>Wallet Metadata:</strong> Names and types of wallets stored on the tag</li>
+  </ul>
+
+  <p><strong>Important:</strong> The data on NFC tags is encrypted using a key that only our backend can provide after successful authentication. Without this encryption key, the data on the tag cannot be decrypted.</p>
+
+  <h2>Data Stored on Our Backend Servers</h2>
+  <p>Our backend stores <strong>only</strong> the following information:</p>
+  <ul>
+    <li><strong>Tag ID:</strong> A unique identifier for each NFC tag</li>
+    <li><strong>Physical Tag ID:</strong> The hardware identifier of your NFC tag</li>
+    <li><strong>Email Address:</strong> For authentication and account recovery via email OTP</li>
+    <li><strong>PIN Hash:</strong> A cryptographic hash of your PIN (not the PIN itself)</li>
+    <li><strong>Encryption Key:</strong> The key required to decrypt wallet data stored on your NFC tag</li>
+    <li><strong>Device Metadata:</strong> Platform, device model, app version, and OS version for security and diagnostics</li>
+  </ul>
+
+  <div class="highlight-box">
+    <p><strong>Critical Privacy Guarantee:</strong></p>
+    <ul>
+      <li>Your <strong>seed phrases are NEVER sent to our servers</strong></li>
+      <li>Seed phrases remain <strong>encrypted on NFC tags and your device</strong></li>
+      <li>We <strong>cannot access your seed phrases</strong> at any time</li>
+      <li>All wallet generation and seed phrase operations happen <strong>entirely on your device</strong></li>
+    </ul>
+  </div>
+
+  <hr />
+
+  <h1>How Seed Vault Works</h1>
+
+  <h2>1. Tag Setup &amp; Registration</h2>
+  <p>When you set up a new NFC tag:</p>
+  <ol>
+    <li>The App generates a unique Tag ID</li>
+    <li>You create a PIN and provide an email address</li>
+    <li>The App generates an encryption key locally</li>
+    <li>The encryption key, PIN hash, and email are sent to our backend</li>
+    <li>The Tag ID is written to your NFC tag</li>
+  </ol>
+
+  <h2>2. Adding Wallets</h2>
+  <p>When you create or import a wallet:</p>
+  <ol>
+    <li>You generate a new seed phrase <strong>on your device</strong> or import an existing one</li>
+    <li>The seed phrase is encrypted <strong>locally on your device</strong> using AES-256 encryption</li>
+    <li>The encrypted data is written to your NFC tag</li>
+    <li><strong>No seed phrase data is transmitted to our servers</strong></li>
+  </ol>
+
+  <h2>3. Authentication &amp; Access</h2>
+  <p>When you want to access your wallets:</p>
+  <ol>
+    <li>You scan your NFC tag to read the Tag ID and encrypted wallet data</li>
+    <li>You authenticate using PIN or email OTP</li>
+    <li>Upon successful authentication, our backend <strong>returns the encryption key</strong></li>
+    <li>The App uses the encryption key to decrypt your wallet data <strong>locally on your device</strong></li>
+    <li>You can now view and use your seed phrases</li>
+  </ol>
+
+  <div class="highlight-box">
+    <p><strong>Backend's Role:</strong> Our backend serves as an <strong>authentication gateway and secure key vault</strong>. It verifies your identity and provides the encryption key needed to decrypt your locally-stored data. It <strong>never processes, stores, or has access to your actual seed phrases</strong>.</p>
+  </div>
+
+  <hr />
+
+  <h1>Security Architecture Summary</h1>
+
+  <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+    <thead>
+      <tr style="border-bottom: 2px solid var(--hr);">
+        <th style="text-align: left; padding: 0.5rem;">Data Type</th>
+        <th style="text-align: left; padding: 0.5rem;">Storage Location</th>
+        <th style="text-align: left; padding: 0.5rem;">Encryption</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid var(--hr);">
+        <td style="padding: 0.5rem;">Seed Phrases</td>
+        <td style="padding: 0.5rem;">NFC Tag + Device</td>
+        <td style="padding: 0.5rem;">AES-256 (Local)</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--hr);">
+        <td style="padding: 0.5rem;">Encryption Key</td>
+        <td style="padding: 0.5rem;">Backend Server</td>
+        <td style="padding: 0.5rem;">At Rest (Server)</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--hr);">
+        <td style="padding: 0.5rem;">Email &amp; PIN Hash</td>
+        <td style="padding: 0.5rem;">Backend Server</td>
+        <td style="padding: 0.5rem;">At Rest (Server)</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--hr);">
+        <td style="padding: 0.5rem;">Tag IDs</td>
+        <td style="padding: 0.5rem;">NFC Tag + Backend</td>
+        <td style="padding: 0.5rem;">Not Encrypted</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr />
+
+  <h1>Your Responsibilities</h1>
+
+  <h2>Secure Your Assets</h2>
+  <ul>
+    <li><strong>Physical Security:</strong> Keep your NFC tags in a safe place. Anyone with physical access to your tag can read the encrypted data.</li>
+    <li><strong>Strong PIN:</strong> Use a strong, unique PIN. Your PIN is the primary authentication method.</li>
+    <li><strong>Email Security:</strong> Secure your email account. It's used for authentication and recovery.</li>
+    <li><strong>Device Security:</strong> Keep your mobile device secure with a passcode, biometric lock, and up-to-date software.</li>
+    <li><strong>Backup Strategy:</strong> Consider maintaining additional secure backups of your seed phrases outside the App.</li>
+  </ul>
+
+  <h2>Understand the Risks</h2>
+  <ul>
+    <li><strong>Lost Tags:</strong> If you lose your NFC tag and don't have backups, you may lose access to your wallets.</li>
+    <li><strong>Forgotten Credentials:</strong> If you forget both your PIN and lose access to your email, you cannot recover your encryption key.</li>
+    <li><strong>Compromised Backend:</strong> If our backend is compromised, attackers could potentially obtain encryption keys. However, they would still need physical access to your NFC tag to decrypt your seed phrases.</li>
+    <li><strong>Physical Tag Access:</strong> If someone gains both physical access to your tag and your authentication credentials, they can access your wallets.</li>
+  </ul>
+
+  <h2>Prohibited Uses</h2>
+  <p>You agree not to:</p>
+  <ul>
+    <li>Use the Services for any illegal purpose or in violation of any laws</li>
+    <li>Attempt to gain unauthorized access to our systems or other users' data</li>
+    <li>Reverse engineer, decompile, or disassemble the App</li>
+    <li>Interfere with or disrupt the Services or servers</li>
+    <li>Use the Services to store or transmit malicious code</li>
+    <li>Impersonate any person or entity or misrepresent your affiliation</li>
+  </ul>
+
+  <hr />
+
+  <h1>Service Availability &amp; Changes</h1>
+
+  <h2>No Guarantee of Availability</h2>
+  <p>We strive to keep the Services available, but we do not guarantee uninterrupted access. The Services may be unavailable due to maintenance, technical issues, or circumstances beyond our control.</p>
+
+  <h2>Changes to Services</h2>
+  <p>We reserve the right to modify, suspend, or discontinue any part of the Services at any time, with or without notice. We will make reasonable efforts to notify users of significant changes.</p>
+
+  <h2>Updates to Terms</h2>
+  <p>We may update these Terms from time to time. Changes will be indicated by the "Effective Date" above. Continued use of the Services after changes constitutes acceptance of the revised Terms.</p>
+
+  <hr />
+
+  <h1>Disclaimers &amp; Limitation of Liability</h1>
+
+  <h2>No Warranty</h2>
+  <p>THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+
+  <p>We do not warrant that:</p>
+  <ul>
+    <li>The Services will be uninterrupted, secure, or error-free</li>
+    <li>The results obtained from using the Services will be accurate or reliable</li>
+    <li>Any errors in the Services will be corrected</li>
+    <li>The encryption or security measures will prevent all unauthorized access</li>
+  </ul>
+
+  <h2>Limitation of Liability</h2>
+  <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, TAPDANO, LLC AND ITS OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM:</p>
+
+  <ul>
+    <li>Your use or inability to use the Services</li>
+    <li>Unauthorized access to or alteration of your data or communications</li>
+    <li>Loss or theft of your NFC tags or devices</li>
+    <li>Forgotten PINs or compromised email accounts</li>
+    <li>Any security breach or system failure</li>
+    <li>Loss of cryptocurrency or other digital assets</li>
+  </ul>
+
+  <p>IN NO EVENT SHALL OUR TOTAL LIABILITY EXCEED THE AMOUNT YOU PAID TO US IN THE TWELVE (12) MONTHS PRECEDING THE EVENT GIVING RISE TO LIABILITY, OR ONE HUNDRED DOLLARS ($100.00), WHICHEVER IS GREATER.</p>
+
+  <h2>Cryptocurrency Risks</h2>
+  <p>You acknowledge that cryptocurrency transactions are irreversible and that we have no ability to reverse transactions or recover lost funds. You are solely responsible for:</p>
+  <ul>
+    <li>Verifying recipient addresses before sending transactions</li>
+    <li>Managing your private keys and seed phrases</li>
+    <li>Understanding the risks associated with cryptocurrency</li>
+    <li>Complying with applicable tax laws and regulations</li>
+  </ul>
+
+  <hr />
+
+  <h1>Indemnification</h1>
+
+  <p>You agree to indemnify, defend, and hold harmless TAPDANO, LLC and its officers, directors, employees, contractors, agents, licensors, and suppliers from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to:</p>
+
+  <ul>
+    <li>Your violation of these Terms</li>
+    <li>Your use or misuse of the Services</li>
+    <li>Your violation of any rights of another party</li>
+    <li>Your violation of any applicable laws or regulations</li>
+  </ul>
+
+  <hr />
+
+  <h1>Data Protection &amp; Privacy</h1>
+
+  <p>Our collection, use, and protection of personal information is governed by our <a href="./privacy.html">Privacy Policy</a>. By using the Services, you consent to the practices described in the Privacy Policy.</p>
+
+  <p><strong>Key Privacy Points:</strong></p>
+  <ul>
+    <li>We collect minimal personal information necessary to provide the Services</li>
+    <li>We never collect or store your seed phrases</li>
+    <li>We use encryption to protect data at rest and in transit</li>
+    <li>We do not sell your personal information to third parties</li>
+    <li>You have rights regarding your personal data under applicable privacy laws</li>
+  </ul>
+
+  <hr />
+
+  <h1>Governing Law &amp; Dispute Resolution</h1>
+
+  <h2>Governing Law</h2>
+  <p>These Terms shall be governed by and construed in accordance with the laws of the State of Florida, United States, without regard to its conflict of law provisions.</p>
+
+  <h2>Dispute Resolution</h2>
+  <p>Any dispute arising out of or relating to these Terms or the Services shall be resolved through binding arbitration in accordance with the American Arbitration Association's rules, except that either party may seek injunctive or other equitable relief in court to prevent actual or threatened infringement, misappropriation, or violation of intellectual property rights.</p>
+
+  <h2>Class Action Waiver</h2>
+  <p>You agree that any arbitration or proceeding shall be limited to the dispute between you and TAPDANO, LLC individually. You waive any right to participate in any class action or class-wide arbitration.</p>
+
+  <hr />
+
+  <h1>Termination</h1>
+
+  <p>We may terminate or suspend your access to the Services immediately, without prior notice or liability, for any reason, including but not limited to breach of these Terms.</p>
+
+  <p>You may stop using the Services at any time. Upon termination:</p>
+  <ul>
+    <li>Your right to use the Services will immediately cease</li>
+    <li>Data stored on our backend may be deleted after a reasonable retention period</li>
+    <li>You remain responsible for maintaining access to your NFC tags and local data</li>
+  </ul>
+
+  <p>Termination does not affect provisions that by their nature should survive, including disclaimers, limitations of liability, and indemnification.</p>
+
+  <hr />
+
+  <h1>Miscellaneous</h1>
+
+  <h2>Entire Agreement</h2>
+  <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and TAPDANO, LLC regarding the Services and supersede all prior agreements and understandings.</p>
+
+  <h2>Severability</h2>
+  <p>If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect.</p>
+
+  <h2>No Waiver</h2>
+  <p>Our failure to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision.</p>
+
+  <h2>Assignment</h2>
+  <p>You may not assign or transfer these Terms or your rights under them without our prior written consent. We may assign these Terms without restriction.</p>
+
+  <h2>Export Compliance</h2>
+  <p>The Services may be subject to export control laws. You agree to comply with all applicable export and import laws and regulations.</p>
+
+  <hr />
+
+  <h1>Contact Information</h1>
+
+  <p>If you have questions about these Terms, please contact us:</p>
+
+  <ul>
+    <li><strong>TAPDANO, LLC</strong></li>
+    <li><strong>Address:</strong> 7345 W Sand Lake Rd Ste 210, Orlando, FL 32819-5280, United States</li>
+    <li><strong>Email:</strong> tapdano@tapdano.com</li>
+  </ul>
+
+  <hr />
+
+  <h1>Acknowledgment</h1>
+
+  <p>BY USING THE SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS OF USE, UNDERSTAND THEM, AND AGREE TO BE BOUND BY THEM. YOU ALSO ACKNOWLEDGE THAT:</p>
+
+  <ul>
+    <li>You understand how the Seed Vault works and the security architecture</li>
+    <li>You are responsible for securing your NFC tags, PIN, and email access</li>
+    <li>You understand that seed phrases are never transmitted to our backend</li>
+    <li>You understand that we store only authentication credentials and encryption keys</li>
+    <li>You accept the risks associated with cryptocurrency and digital asset management</li>
+    <li>You have read and agree to our Privacy Policy</li>
+  </ul>
+
+  <hr />
+
+  <p style="margin-top: 2rem; font-size: 0.875rem; color: var(--muted);">
+    <em>Last updated: October 15, 2025</em>
+  </p>
+</main>
+</body>
+</html>
+
