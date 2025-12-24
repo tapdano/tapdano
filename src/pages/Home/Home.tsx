@@ -3,15 +3,16 @@ import './home.css'
 import Header from '../../Components/Header/Header'
 import CaseStudySlide from '../../Components/CaseStudySlide/CaseStudySlide'
 import CaseUseSlide from '../../Components/CaseUseSlide/CaseUseSlide'
-import LeaderCard from '../../Components/LeaderCard/LeaderCard'
+//import LeaderCard from '../../Components/LeaderCard/LeaderCard'
 import SphereRenderer from '../../Components/Sphere/Sphere'
 import Footer from '../../Components/Footer/Footer'
 
-import thiagoPhoto from '../../assets/images/thiagoPhoto.jpg'
+/*import thiagoPhoto from '../../assets/images/thiagoPhoto.jpg'
 import lucasPhoto from '../../assets/images/lucasPhoto.jpg'
 import projectCatalystLogo from '../../assets/svg/projectCatalystLogo.svg'
 import encryption from '../../assets/images/encryption.png'
 import WhoFundInfo from '../../Components/WhoFundInfo/WhoFundInfo'
+*/
 
 function Home() {
 
@@ -28,7 +29,7 @@ function Home() {
       </section>
 
       <main className='container hero-home'>
-        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSvPgbyZ3_djJgONyzCNGt8f6BmQbqL78M3mIwrsgTKHZh0RIQY60DjKl0ppyj2XmokNTBcrKoSSwWW/pubembed?start=false&loop=false&delayms=3000" allowfullscreen></iframe>
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSvPgbyZ3_djJgONyzCNGt8f6BmQbqL78M3mIwrsgTKHZh0RIQY60DjKl0ppyj2XmokNTBcrKoSSwWW/pubembed?start=false&loop=false&delayms=3000" allowFullScreen={true}></iframe>
       </main>
 
       <section className='soulBound-bg'>
