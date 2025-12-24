@@ -45,11 +45,11 @@
     gap: 32px;
 }
 .openSourceContent h1{
-    max-width: 15ch;
+    /*max-width: 15ch;*/
 }
 .openSourceContent p{
     text-align: justify;
-    max-width: 31ch;
+    /*max-width: 31ch;*/
 }
 .openSourceContent a{
     align-self: start;

@@ -19,17 +19,17 @@ function Home() {
     <>
       <Header/>
 
-      <main className='container hero-home'>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/GacSn2CCE80?si=9SwtdwrPi43IByP3&amp;controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-      </main>
-
       <section className='openSource container'>
         <div className="openSourceContent">
-          <h1 className='title-1 gradient-title'>Open-source development tools</h1>
-          <p className='text-1'>We create tools that simplify the development of applications using NFC and NFT technologies such as NFC wallets and physical product authentication. TapDano is a project funded by the <span>Cardano Catalyst Fund 10.</span></p>
+          <h1 className='title-1 gradient-title'>Secure identity and authentication for the physical world</h1>
+          <p className='text-1'>We build infrastructure that connects people, devices, and real-world actions to digital systems using NFC and cryptographic credentials. TapDano enables secure authentication, presence validation, and trusted interactions between physical products and digital platforms, from pilots to enterprise deployments.</p>
           <a href="#caseStudy" className='button'>Explore Use Cases</a>
         </div>
       </section>
+
+      <main className='container hero-home'>
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSvPgbyZ3_djJgONyzCNGt8f6BmQbqL78M3mIwrsgTKHZh0RIQY60DjKl0ppyj2XmokNTBcrKoSSwWW/pubembed?start=false&loop=false&delayms=3000" allowfullscreen></iframe>
+      </main>
 
       <section className='soulBound-bg'>
         <div className="soulBoundContent container">
@@ -50,6 +50,7 @@ function Home() {
         <CaseUseSlide/>
       </section>
 
+      {/*
       <section className='projectLeaders container'>
         <h2 className='title-1 gradient-title'>Project Leaders</h2>
         <div className="containerLeaderCards">
@@ -137,6 +138,7 @@ function Home() {
 
         </div>
       </section>
+      */}
 
       <section className='comunity container'>
         <div className='comunityContent'>
