@@ -20,6 +20,17 @@ function Home() {
     <>
       <Header/>
 
+      <section className='heroVideo container'>
+        <video 
+          src="/video.mp4" 
+          autoPlay 
+          muted 
+          loop 
+          playsInline 
+          controls
+        />
+      </section>
+
       <section className='openSource container'>
         <div className="openSourceContent">
           <h1 className='title-1 gradient-title'>Secure identity and authentication for the physical world</h1>

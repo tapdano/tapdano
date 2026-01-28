@@ -1,3 +1,11 @@
+.heroVideo {
+    padding-block: 50px;
+}
+.heroVideo video {
+    width: 100%;
+    border-radius: 20px;
+}
+
 .stripe{
     background: linear-gradient(86.88deg, rgba(34, 102, 175, 0.6) 2.09%, rgba(66, 65, 127, 0.6) 50%, rgba(191, 129, 120, 0.6) 97.91%);
     padding-block: 30px;
