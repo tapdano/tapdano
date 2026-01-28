@@ -22,7 +22,7 @@ function Home() {
 
       <section className='heroVideo container'>
         <video 
-          src="/video.mp4" 
+          src="https://tapdano-public.s3.sa-east-1.amazonaws.com/video.mp4" 
           autoPlay 
           muted 
           loop 
